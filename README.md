@@ -1,73 +1,137 @@
-# Welcome to your Lovable project
+# FloraTech Solutions - Landing Page
 
-## Project info
+Uma landing page profissional para FloraTech Solutions, especializada em automação e IA para empresas.
 
-**URL**: https://lovable.dev/projects/f0c688a5-b047-4940-8f29-dbf95ace02aa
+## 🚀 Tecnologias
 
-## How can I edit this code?
+- **React 18** - Biblioteca JavaScript para interfaces
+- **TypeScript** - Tipagem estática
+- **Vite** - Build tool rápido
+- **Tailwind CSS** - Framework de CSS utilitário
+- **shadcn/ui** - Componentes de UI
+- **React Router** - Roteamento
+- **Lucide React** - Ícones
+- **React Query** - Gerenciamento de estado
 
-There are several ways of editing your application.
+## 📱 Funcionalidades
 
-**Use Lovable**
+- ✅ Design responsivo para mobile, tablet e desktop
+- ✅ Seção Hero com call-to-action
+- ✅ Apresentação de benefícios e funcionalidades
+- ✅ Tabela de preços com 3 planos
+- ✅ Seção de contato/CTA
+- ✅ Navegação suave entre seções
+- ✅ Animações e transições elegantes
+- ✅ SEO otimizado
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f0c688a5-b047-4940-8f29-dbf95ace02aa) and start prompting.
+## 🎨 Design System
 
-Changes made via Lovable will be committed automatically to this repo.
+O projeto utiliza um design system completo com:
+- Tokens de cores semânticas
+- Variantes de componentes
+- Animações customizadas
+- Tipografia consistente
+- Gradientes e sombras
 
-**Use your preferred IDE**
+## 🏃‍♂️ Como executar
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Pré-requisitos
+- Node.js 18+ 
+- npm ou yarn
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Instalação
+```bash
+# Clone o repositório
+git clone <seu-repositorio>
 
-Follow these steps:
+# Navegue para o diretório
+cd floratech-landing
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Instale as dependências
+npm install
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Execute em modo desenvolvimento
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Build para produção
+```bash
+# Gerar build otimizado
+npm run build
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+# Visualizar build localmente
+npm run preview
+```
 
-**Use GitHub Codespaces**
+## 📁 Estrutura do Projeto
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```
+src/
+├── components/           # Componentes React
+│   ├── ui/              # Componentes de UI (shadcn)
+│   ├── Header.tsx       # Cabeçalho com navegação
+│   ├── Hero.tsx         # Seção principal
+│   ├── Features.tsx     # Benefícios e funcionalidades
+│   ├── Pricing.tsx      # Tabela de preços
+│   ├── CTA.tsx          # Call-to-action final
+│   └── Footer.tsx       # Rodapé
+├── pages/               # Páginas da aplicação
+├── assets/              # Imagens e recursos
+├── lib/                 # Utilitários
+└── hooks/               # Custom hooks
+```
 
-## What technologies are used for this project?
+## 💰 Planos e Preços
 
-This project is built with:
+- **Starter**: R$ 3.800/mês
+- **Profissional**: R$ 5.500/mês  
+- **Enterprise**: R$ 12.000/mês
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🚀 Deploy
 
-## How can I deploy this project?
+### Vercel (Recomendado)
+1. Conecte seu repositório GitHub à Vercel
+2. Configure o comando de build: `npm run build`
+3. Configure o diretório de output: `dist`
+4. Deploy automático a cada push
 
-Simply open [Lovable](https://lovable.dev/projects/f0c688a5-b047-4940-8f29-dbf95ace02aa) and click on Share -> Publish.
+### Netlify
+1. Conecte seu repositório GitHub à Netlify
+2. Configure:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+3. Deploy automático
 
-## Can I connect a custom domain to my Lovable project?
+### GitHub Pages
+```bash
+# Instalar gh-pages
+npm install --save-dev gh-pages
 
-Yes, you can!
+# Adicionar ao package.json
+"homepage": "https://seuusuario.github.io/floratech-landing",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+# Deploy
+npm run deploy
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 📄 Licença
+
+MIT License - Veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+## 🤝 Contribuição
+
+1. Fork o projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📞 Contato
+
+FloraTech Solutions - [contato@floratech.com](mailto:contato@floratech.com)
+
+Site: [https://floratech.com](https://floratech.com)
